@@ -3,7 +3,8 @@ const {Schema,model} = require('mongoose')
 const SchemaEtapa = Schema({
     name:{
         type:String,
-        default:''
+        required:[true,'Anteproyecto','Entrega parcial 1','Entrega parcial 2','Entrega final'],
+        unique:[true]
     },
     datecreate:{
         type:Date,

@@ -3,7 +3,8 @@ const {Schema,model} = require('mongoose')
 const tipoProyectosSchema = Schema({
     name:{
         type:String,
-        default:''
+        required:[true,'Ensayo','Articulo','Monografia','Trabajo final de pregrago','Trabajo final de especializacion'],
+        unique:[true]
     },
     datecreate:{
         type:Date,
