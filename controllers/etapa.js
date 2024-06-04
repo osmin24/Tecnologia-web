@@ -36,8 +36,8 @@ const putEtapa = async (req=request,res=response) => {
     try{
         const {_id,name} = req.body
         const dateupdate = new Date()
-        const dataBD = await Etapa.findByIdAndUpdate(_id,{name,dateupdate},{new:true})
-        res.status(203).json({msg:'Ok'})
+        const data = await Etapa.findByIdAndUpdate(_id,{name,dateupdate},{new:true})
+        res.status(203).json(data)
     }catch(e){
         res.status(401).json({msg:e})
     }finally{

@@ -53,8 +53,8 @@ const putCliente= async (req=request,res=response) => {
     try{
         const {_id,name,email} = req.body
         const dateupdate = new Date()
-        const dataBD = await Cliente.findByIdAndUpdate(_id,{name,email,dateupdate},{new:true})
-        res.status(202).json(dataBD)
+        const data = await Cliente.findByIdAndUpdate(_id,{name,email,dateupdate},{new:true})
+        res.status(202).json(data)
     }catch(e){
         res.status(401).json({msg:e})
     }finally{

@@ -3,17 +3,17 @@ const {Schema,model} = require('mongoose')
 const SchemaUniversidad  = Schema({
     name:{
         type:String,
-        require:true,
+        required:true,
         default:''
     },
     direction:{
         type:String,
-        require:true,
+        required:true,
         default:''
     },
     tel:{
         type:String,
-        require:true,
+        required:true,
         default:''
     },
     datecreate:{
