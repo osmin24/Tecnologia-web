@@ -27,4 +27,4 @@ const SchemaUniversidad  = Schema({
 })
 
 
-module.exports = model('universidad',SchemaUniversidad)
+module.exports = model('Universidad',SchemaUniversidad)

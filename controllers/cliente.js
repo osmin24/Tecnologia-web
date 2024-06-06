@@ -1,6 +1,5 @@
 const {request,response} = require('express')
 const Cliente = require('../modules/cliente')
-const { trusted } = require('mongoose')
 
 
 const getCliente =  async (req=request,res=response) => {

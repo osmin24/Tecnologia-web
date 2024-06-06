@@ -8,6 +8,7 @@ const Cliente= require('./routers/cliente')
 const Etapa = require('./routers/etapa')
 const TipoProyecto = require('./routers/tipoProyecto')
 const Universidad = require('./routers/universidad')
+const Proyecto = require('./controllers/proyecto')
 
 app.set('port',process.env.PORT || 3000)
 app.use(express.urlencoded({extended:'true'}))
@@ -20,5 +21,6 @@ app.use('/cliente',Cliente)
 app.use('/etapa',Etapa)
 app.use('/tipoProyecto',TipoProyecto)
 app.use('/universidad',Universidad)
+app.use('/proyecto',Proyecto)
 
 module.exports = {app}
