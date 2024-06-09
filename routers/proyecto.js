@@ -1,4 +1,4 @@
-const {Router} = require('express')
+/* const {Router} = require('express')
 const router = Router()
 
 const {
@@ -13,4 +13,4 @@ router.post('/',postProyecto)
 router.put('/',putProyecto)
 router.delete('/',deleteProyecto)
 
-module.exports = router
+module.exports = router */

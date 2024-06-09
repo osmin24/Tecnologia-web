@@ -1,4 +1,4 @@
-const {request,response} = require('express')
+/* const {request,response} = require('express')
 const Proyecto = require('../modules/proyecto')
 const Cliente = require('../modules/cliente')
 const Etapa = require('../modules/etapa')
@@ -103,4 +103,4 @@ module.exports = {
     postProyecto,
     putProyecto,
     deleteProyecto
-}
+} */

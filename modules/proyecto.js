@@ -1,4 +1,4 @@
-const {Schema,model} = require('mongoose')
+/* const {Schema,model} = require('mongoose')
 const Cliente = require('../modules/cliente')
 const Etapa = require('../modules/etapa')
 const TipoProyecto = require('../modules/tipoProyectos')
@@ -62,4 +62,4 @@ const ShemaProyecto = Schema({
     }
 })
 
-module.exports = model('Proyecto',ShemaProyecto)
+module.exports = model('Proyecto',ShemaProyecto) */
