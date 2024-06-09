@@ -9,10 +9,10 @@ const {
     deleteUniversidad
 } = require('../controllers/universidad')
 
-router.get('/getUniverdad',getUniversidad)
-router.get('/getUniversidadId',getUniversidadId)
-router.post('/postUniversidad',postUniversidad)
-router.put('/putUniversidad',putUniversidad)
-router.delete('/deleteUniversidad',deleteUniversidad)
+router.get('/',getUniversidad)
+router.get('/',getUniversidadId)
+router.post('/',postUniversidad)
+router.put('/',putUniversidad)
+router.delete('/',deleteUniversidad)
 
 module.exports = router

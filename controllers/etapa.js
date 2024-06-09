@@ -51,7 +51,7 @@ const postEtapa = async (req=request,res=response) => {
         const {name} = req.body
         const dataDB = await Etapa.findOne({name})
         if(!dataDB){
-            res.status(401).json({msg:'Error'})
+            return res.status(401).json({msg:'Error'})
         }
         const etapa = new Etapa({name})
         etapa.save()

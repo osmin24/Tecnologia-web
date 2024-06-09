@@ -34,7 +34,7 @@ const postCliente= async (req=request,res=response) => {
     try{
         const {name,email} = req.body
         const nameDB = await Cliente.findOne({name})
-        if(nameDB){
+        if(!nameDB){
             res.status(401).json({msg:'Error'})
         }
         const cliente = new Cliente({name,email})

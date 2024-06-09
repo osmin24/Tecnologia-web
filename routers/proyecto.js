@@ -6,11 +6,11 @@ const {
     postProyecto,
     putProyecto,
     deleteProyecto
-} = require('../controllers/proyectos')
+} = require('../controllers/proyecto')
 
-router.get('/getProyecto',getProyecto)
-router.post('/postProyecto',postProyecto)
-router.put('/putProyecto',putProyecto)
-router.delete('/deleteProyecto',deleteProyecto)
+router.get('/',getProyecto)
+router.post('/',postProyecto)
+router.put('/',putProyecto)
+router.delete('/',deleteProyecto)
 
 module.exports = router

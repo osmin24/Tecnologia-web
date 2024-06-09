@@ -10,10 +10,10 @@ const {
 } = require('../controllers/tipoProyectos')
 
 
-router.get('/getTipoProyecto',getTipoProyecto)
-router.get('/getTipoProyectoId',getTipoProyectoId)
-router.post('/postTipoProyecto',postTipoProyecto)
-router.put('/putTipoProyecto',putTipoProyecto)
-router.delete('/deleteTipoProyecto',deleteTipoProyecto)
+router.get('/',getTipoProyecto)
+router.get('/',getTipoProyectoId)
+router.post('/',postTipoProyecto)
+router.put('/',putTipoProyecto)
+router.delete('/',deleteTipoProyecto)
 
 module.exports = router

@@ -10,11 +10,11 @@ const {
 } = require('../controllers/etapa')
 
 
-router.get('/getEtapa',getEtapa)
-router.get('/getEtapaId',getEtapaId)
-router.post('/postEtapa',postEtapa)
-router.put('/putEtapa',putEtapa)
-router.delete('/deleteEtapa',deleteEtapa)
+router.get('/',getEtapa)
+router.get('/',getEtapaId)
+router.post('/',postEtapa)
+router.put('/',putEtapa)
+router.delete('/',deleteEtapa)
 
 module.exports = router
 

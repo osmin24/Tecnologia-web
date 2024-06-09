@@ -14,11 +14,11 @@ const {
 
 } = require('../controllers/cliente')
 
-router.get('/getCliente',getCliente)
-router.get('/getClienteId',getClienteId)
-router.post('/postCliente',postCliente)
-router.put('/putCliente',putCliente)
-router.delete('/deleteCliente',deleteCliente)
+router.get('/',getCliente)
+router.get('/',getClienteId)
+router.post('/',postCliente)
+router.put('/',putCliente)
+router.delete('/',deleteCliente)
 
 
 module.exports = router

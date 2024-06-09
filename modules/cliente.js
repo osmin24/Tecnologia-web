@@ -8,6 +8,7 @@ const clienteSchema = Schema({
     },
     email:{
         type:String,
+        unique:[true],
         default:''
     },
     datecreate:{
@@ -20,4 +21,4 @@ const clienteSchema = Schema({
     }
 })
 
-module.exports = model('cliente',clienteSchema)
+module.exports = model('Cliente',clienteSchema)
