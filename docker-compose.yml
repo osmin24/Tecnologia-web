@@ -1,0 +1,14 @@
+
+services : 
+  proyecto-web :
+    container_name : proyecto-web
+    image :  proyecto-web:v1
+    build : 
+      context : .
+    ports :  
+      - "400:400"
+    networks : 
+      proyecto-app:
+
+networks :
+  proyecto-app:

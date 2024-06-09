@@ -31,7 +31,7 @@ const postUniversidad = async (req=request,res=response) => {
     try{
         const {name,direction,tel} = req.body
         const dataBD = await Universidad.findOne({name})
-        if(!name){
+        if(!dataBD){
             res.status(401).json({msg:'Error'})
         }
         const universidad = new Universidad({name,direction,tel})

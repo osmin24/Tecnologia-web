@@ -21,7 +21,7 @@ const getEtapaId = async (req=request,res=response) => {
         const {_id} = req.body
         const dataBD = await Etapa.findOne({_id})
         if(!dataBD){
-            res.status(401).json({msg:'Error'})
+            return res.status(401).json({msg:'Error'})
         }
         res.status(201).json(dataBD)
     }catch(e){
@@ -50,7 +50,7 @@ const postEtapa = async (req=request,res=response) => {
     try{
         const {name} = req.body
         const dataDB = await Etapa.findOne({name})
-        if(!dataDB){
+        if(dataDB){
             return res.status(401).json({msg:'Error'})
         }
         const etapa = new Etapa({name})
